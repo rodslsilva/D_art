@@ -1,8 +1,38 @@
 .bg-norepeat{
     background-repeat: no-repeat;
+    background-color: #FEFAF6;
 }
 
 .form-container{
-    max-width: 300px;
+    
     padding: 1rem;
+}
+
+.border-left{
+
+    max-width: 150vw;
+    max-height: 100vh;
+}
+
+.b-line{
+    border: 20px solid rgb(123, 160, 240);
+    border-radius: 10px;
+}
+
+.a{
+    color: whitesmoke ;
+    text-decoration: none;
+}
+
+.w-20{
+    min-width: 20vw;
+    min-height: 100vh;
+}
+
+.n-link{
+    text-decoration: none;
+    color: black;    
+}
+.shadow{
+    box-shadow: 10px 10px 20px #00000066;
 }

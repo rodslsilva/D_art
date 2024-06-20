@@ -1,39 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Rede Social</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/bootstrap.bundle.min.js" defer></script>
-    <script src="js/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Rede Social</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/script.js" defer></script>
 </head>
-<body class="d-flex align-items-center py-4 bg-secondary-subtle bg-norepeat">
-    <!--Login-->
-    <main class="w-100 form-container">
-      <div class="me-auto">
+
+<body class="bg-body-secondary">
+  <main class="row m-auto m-lg-5 ">
+
+    <div class="container d-flex h-75 bg-norepeat justify-content-center">
+      <div class="m-5 col-8 col-lg-3 py-5">
         <form>
-            <div class="text-center">
-            <img src="img/logo.png" alt="logo" class="mb-4" height="80" width="80">
-            </div>
-            <h1 class="h3 mb-3 fw-light text-center">Sign In</h1>
-            <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInput" placeholder="xxxxxx@xxxx.xxx">
-                <label for="floatingInput">E-mail</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingInput" placeholder="xxxxxxxxxx">
-                <label for="floatingInput">Password</label>
-            </div>
-            <div class="form-check text-start my-3">
-                <input type="checkbox" class="form-check-input" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">Remember me</label>
-            </div>
-            <button class="btn btn-primary w-100 py-2">Enter</button>
+          <div class="text-center">
+            <img src="img/logo_padrao.png" alt="logo" class="mb-4 m-auto rounded-5 d-none d-lg-block" height="200" width="200">
+            <img src="img/D-art_logo_full.png" alt="logo" class="mb-4 rounded-5 d-lg-none" height="200" width="200">
+          </div>
+          <h1 class="h3 mb-3 fw-light text-center">Sign In</h1>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control border border-primary" id="floatingInput"
+              placeholder="xxxxxx@xxxx.xxx">
+            <label for="floatingInput">E-mail</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control border border-primary" id="floatingInput"
+              placeholder="xxxxxxxxxx">
+            <label for="floatingInput">Password</label>
+          </div>
+          <div class="form-check text-start my-3">
+            <input type="checkbox" class="form-check-input border border-primary" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+          </div>
+          <button class="btn btn-primary w-100 py-2 fs-3"><a class="a" href="./pg/feed.html">Enter</a></button>
         </form>
+        <p class="py-5 text-center fw-light">Desenvolvido por Rodrigo E Dalton</p>
+        <p class="text-center fw-light"><i class="bi bi-c-circle fw-light"></i> 2024</p>
       </div>
-    </main>
+
+      <div class="row d-none d-xl-flex">
+        <div class="col-3 w-50 mt-5">
+          <p class="m-auto w-auto my-auto fw-light fs-4"> Bem-vindo à <strong>D_ART</strong> – o ponto de encontro para mentes criativas apaixonadas por arte e
+            design! Aqui, acreditamos no poder transformador da arte e no impacto profundo que o design pode ter na
+            vida das pessoas e na sociedade como um todo. Somos uma comunidade vibrante e inclusiva, dedicada a
+            inspirar, compartilhar e celebrar a criatividade em todas as suas formas.</p>
+            <p class="m-auto w-auto fw-light fs-4">Clique para saber mais <a href="pg/quemSomos.html">Sobre Nós</a>.</p>
+        </div>
+        <div class="col-4 mx-5 w-40 my-auto " >
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/imagem13.jpg" class="d-block w-100 rounded-3" alt="..." width="100" height="300">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/imagem14.jpg" class="d-block w-100 rounded-3" alt="..." width="100" height="300">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/imagem15.jpg" class="d-block w-100 rounded-3" alt="..." width="100" height="300">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-4 mx-5 my-auto w-40">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./img/imagem11.jpg" class="d-block w-100 rounded-3" alt="..." width="100" height="300">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/imagem12.jpg" class="d-block w-100 rounded-3" alt="..." width="100" height="300">
+                </div>
+                <div class="carousel-item">
+                  <img src="./img/imagem13.jpg" class="d-block w-100 rounded-3" alt="..." width="100" height="300">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-auto w-50">
+            <p class="m-auto w-auto mt-5 fw-light fs-4"> Nossa missão é conectar artistas, designers e entusiastas de todo o mundo, proporcionando uma plataforma
+              onde ideias podem florescer, colaborações podem surgir e a inovação é incentivada. Queremos promover a
+              diversidade de estilos, culturas e perspectivas, criando um espaço onde cada voz criativa pode ser
+              ouvida e valorizada.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
 </body>
+
 </html>
