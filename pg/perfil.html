@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Rede Social</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="../js/bootstrap.bundle.min.js" defer></script>
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-norepeat">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="feed.html"><img src="../img/logo_padrao.png" alt="logo" class="rounded-3"
+                    height="50" width="50"></a>
+
+            <div class="ms-auto text-center d-none d-lg-block">
+                <form class="d-flex text-center" role="search">
+                    <input class="form-control me-2 text-center" type="search" placeholder="Pesquisar"
+                        aria-label="Search">
+                    <button class="btn btn-outline-primary text-center" type="submit">Pesquisar</button>
+                </form>
+            </div>
+
+            <div class="fs-3 ms-auto pe-lg-3">
+                <a href="explorar.html"><i class="bi bi-search-heart"></i></a>
+                <a href="perfil.html"><i class="bi bi-person-square"></i></a>
+                <a data-bs-toggle="offcanvas" href="#offcanvas1" class="bi bi-inbox"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- coluna latera perfil -->
+    <main class="row container-fluid m-auto">
+        <section class="col-lg-3">
+            <div class="mt-5 5 bg-norepeat">
+                <div class="text-center py-4">
+                    <a href="">
+                        <img class="rounded-circle" src="../img/rosto1.jpg" alt="" width="100" height="100">
+                    </a>
+                </div>
+                <div class="text-center">
+                    <h3 class="fw-bold">rodrigo_Art&Design</h3>
+                    <h5 class="fw-light fs-6">Rodirgo Lorem Ipsun da Silva Sauro</h5>
+                </div>
+                <br>
+               <div class="px-5">
+                <div>
+                    <p class="text-center border-bottom border-primary-subtle fw-light fs-4">Sobre Mim <a href=""
+                            class="" data-bs-toggle="modal" data-bs-target="#modal1"><i
+                                class="bi bi-pencil-square"></i></a></p>
+                    <strong class="mb-5">Criador de Arte Digital e Fotógrafo.</strong>
+                    <p class="fw-light">
+                        Olá! Sou apaixonado pela arte em todas as suas formas e encontro minha expressão através da
+                        fotografia e da arte digital. Minha jornada artística começou com uma câmera na mão e um olhar
+                        curioso, buscando capturar a beleza e a essência do mundo ao meu redor.
+                    </p>
+                </div>
+
+                <div class="row pb-4">
+                    <p class="text-center border-bottom border-primary-subtle fw-light fs-4">Contatos e Redes <a href=""
+                            class="" data-bs-toggle="modal" data-bs-target="#modal2"><i
+                                class="bi bi-pencil-square"></i></a></p>
+                    <ul class="list-group">
+                        <a href="" class="text-center list-group-item bg-body-secondary"><i class="bi bi-whatsapp"></i>
+                            (00) 234-5678</a>
+                        <a href="" class="text-center list-group-item bg-body-secondary"><i class="bi bi-twitter-x"></i>
+                            @Rod$Art</a>
+                        <a href="" class="text-center list-group-item bg-body-secondary"><i class="bi bi-instagram"></i>
+                            @Rod$Art01</a>
+                        <a href="" class="text-center list-group-item bg-body-secondary"><i class="bi bi-linkedin"></i>
+                            Rodrigo Lorem</a>
+                        <a href="" class="text-center list-group-item bg-body-secondary"><i class="bi bi-youtube"></i>
+                            Rodrigo-Designs</a>
+                    </ul>
+                </div>
+            </div>
+               </div>
+            <!-- Modal 1-->
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-norepeat">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modal1Label">Editar <strong>Sobre Mim</strong></h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <textarea id="commit" rows="10" class="w-100 bg-body-secondary"
+                                placeholder="Digite aqui..."></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary text-center">Salvar mudanças</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal 2-->
+        <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content bg-norepeat">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modal2Label">Editar <strong>Contatos e Redes</strong></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <label for="desc"><i class="bi bi-whatsapp"></i> WhattsApp</label> <br>
+                            <input type="text" placeholder="Insira aqui o Link..." class="form-control m-auto w-auto"> <br>
+                            <label for="desc"><i class="bi bi-twitter-x"></i> Twitter X</label> <br>
+                            <input type="text" placeholder="Insira aqui o Link..." class="form-control m-auto w-auto"> <br>
+                            <label for="desc"><i class="bi bi-instagram"></i> Instagram</label> <br>
+                            <input type="text" placeholder="Insira aqui o Link..." class="form-control m-auto w-auto"><br>
+                            <label for="desc"><i class="bi bi-linkedin"></i> Linkedin</label> <br>
+                            <input type="text" placeholder="Insira aqui o Link..." class="form-control m-auto w-auto"><br>
+                            <label for="desc"><i class="bi bi-youtube"></i> Youtube</label> <br>
+                            <input type="text" placeholder="Insira aqui o Link..." class="form-control m-auto w-auto"><br>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- ------------------------------------------------------------------------- -->
+        <section class="col-lg-6">
+            <div class="mt-5 p-lg-5 bg-norepeat w-20">
+                <div class="text-center fw-light fs-1">
+                    <p class="border-bottom border-primary-subtle">Minhas Postagens</p>
+                </div>
+                <!-- posts -->
+
+                <div class="accordion accordion-flush p-5 p-lg-1" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-4 bg-body-secondary" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#flush-collapsetwo" aria-expanded="false" aria-controls="flush-collapsetwo">
+                          <i class="bi bi-plus-circle"> <span class="fw-normal">Nova Postagem</span></i> 
+                        </button>
+                      </h2>
+                      <div id="flush-collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <button type="button" class="btn btn-outline-secondary mb-3"><i class="bi bi-paperclip"></i>
+                            Anexar</button>
+                          <textarea class="form-control" id="commit" rows="10" class="w-100 h-50 bg-body-secondary"
+                            placeholder="Digite aqui..."></textarea>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary w-25 ms-auto mt-2" type="button">Salvar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+
+                <div class="mt-5">
+                    <p class="w-75 m-auto"><img src="../img/rosto1.jpg" alt="logo" class="mb-2 rounded-3" height="30"
+                            width="30"> <span class="fs-4 fw-light">rodrigo_Art&Design</span></p>
+                    <div>
+                        <div class="w-75 m-auto d-flex">
+                            <img src="../img/foto3.jpg" alt="logo" class="mb-4 rounded-3 w-100">
+
+                            <div class="p-1 p-sm-3 fs-5 fw-bold">
+                                <a href="">
+                                    <i class="bi bi-heart text-danger"></i>
+                                    <i class="bi bi-send text-primary"></i>
+                                    <i class="bi bi-code-slash text-success"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div>
+                    <p class="w-75 m-auto"><img src="../img/rosto1.jpg" alt="logo" class="mb-2 rounded-3" height="30"
+                            width="30"> <span class="fs-4 fw-light">rodrigo_Art&Design</span></p>
+                    <div class="w-75 m-auto d-flex">
+                        <img src="../img/foto2.jpg" alt="logo" class="mb-4 rounded-3 w-100">
+
+                        <div class="p-1 p-sm-3 fs-5 fw-bold">
+                            <a href="">
+                                <i class="bi bi-heart text-danger"></i>
+                                <i class="bi bi-send text-primary"></i>
+                                <i class="bi bi-code-slash text-success"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- coluna lateral -->
+        <section class="col-lg-3">
+            <div class="mt-5 bg-norepeat w-20 d-none d-lg-block">
+                <div class="text-center pt-4 pb-2">
+                    <p class="border-bottom border-primary-subtle fw-light fs-1">Amigos</p>
+                    <ul class="list-group list-group-flush bg-body-secondary">
+                        <li class="list-group-item bg-norepeat text-start">
+                            <div class="d-flex ps-3">
+                                <img src="../img/rosto3.jpg" alt="logo"
+                                    class="mb-2 rounded-circle border border-success border-2" height="60" width="60">
+                                <p class="me-auto p-2">
+                                    <span class="fs-4 fw-light">romannjess</span>
+                                </p>
+
+                            </div>
+                        </li>
+                        <li class="list-group-item bg-norepeat text-start">
+                            <div class="d-flex ps-3">
+                                <img src="../img/rosto7.jpg" alt="logo"
+                                    class="mb-2 rounded-circle border border-success border-2" height="60" width="60">
+                                <p class="me-auto p-2">
+                                    <span class="fs-4 fw-light">my_onysio</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-group-item bg-norepeat text-start">
+                            <div class="d-flex ps-3">
+                                <img src="../img/rosto6.jpg" alt="logo"
+                                    class="mb-2 rounded-circle border border-success border-2" height="60" width="60">
+                                <p class="me-auto p-2">
+                                    <span class="fs-4 fw-light">taylorjohn95</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-group-item bg-norepeat text-start">
+                            <div class="d-flex ps-3">
+                                <img src="../img/rosto10.jpg" alt="logo"
+                                    class="mb-2 rounded-circle border border-success border-2" height="60" width="60">
+                                <p class="me-auto p-2">
+                                    <span class="fs-4 fw-light">carla_tay125</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="list-group-item bg-norepeat text-start">
+                            <div class="d-flex ps-3">
+                                <img src="../img/rosto5.jpg" alt="logo"
+                                    class="mb-2 rounded-circle border border-success border-2" height="60" width="60">
+                                <p class="me-auto p-2">
+                                    <span class="fs-4 fw-light">marieipsum</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-5">
+                    <div class="accordion accordion-flush -5" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header ">
+                                <button class="accordion-button collapsed bg-body-secondary " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Meus Posts
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="my-3">
+                                    <div class="w-50 mb-3 mx-auto">
+                                        <img src="../img/foto3.jpg" alt="logo" class="rounded-3 w-100">
+                                        <span><i class="bi bi-heart text-danger">25</i></span>
+                                    </div>
+                                    <div class="w-50 mb-5 mx-auto">
+                                        <img src="../img/foto2.jpg" alt="logo" class="rounded-3 w-100">
+                                        <span><i class="bi bi-heart text-danger">17</i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-lg-none text-end fixed-bottom ">
+                <button class="btn btn-primary btn-lg fs-1" data-bs-toggle="offcanvas" href="#offcanvas2" role="button"
+                    type="submit"><i class="bi bi-people-fill"></i></button>
+            </div>
+
+            <!-- offcanvas1 -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas1" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header bg-norepeat">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Caixa de Entrada</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-norepeat">
+                    <div>
+
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Comentarios
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                        <div id="liveAlert1"></div>
+                                        <button type="button" class="btn btn-primary" id="liveAlertBtn1">Mostrar novos
+                                            Comentarios</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Curtidas
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                        <div id="liveAlert2"></div>
+                                        <button type="button" class="btn btn-primary" id="liveAlertBtn2">Mostrar novas
+                                            Curtidas</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Mensagens
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+
+                                        <div id="liveAlert3"></div>
+                                        <button type="button" class="btn btn-primary" id="liveAlertBtn3">Mostrar novas
+                                            Mensagens</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- offcanvas2---------------------- -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2">
+                <div class="offcanvas-header bg-norepeat">
+                    <p class="border-bottom border-primary-subtle fw-light fs-1">Amigos</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body bg-norepeat">
+
+                    <div class="bg-norepeat w-20">
+                        <div class="text-center pb-2">
+                          
+                            <ul class="list-group list-group-flush bg-body-secondary">
+                                <li class="list-group-item bg-norepeat text-start">
+                                    <div class="d-flex ps-3">
+                                        <img src="../img/rosto3.jpg" alt="logo"
+                                            class="mb-2 rounded-circle border border-success border-2" height="60"
+                                            width="60">
+                                        <p class="me-auto p-2">
+                                            <span class="fs-4 fw-light">romannjess</span>
+                                        </p>
+
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-norepeat text-start">
+                                    <div class="d-flex ps-3">
+                                        <img src="../img/rosto7.jpg" alt="logo"
+                                            class="mb-2 rounded-circle border border-success border-2" height="60"
+                                            width="60">
+                                        <p class="me-auto p-2">
+                                            <span class="fs-4 fw-light">my_onysio</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-norepeat text-start">
+                                    <div class="d-flex ps-3">
+                                        <img src="../img/rosto6.jpg" alt="logo"
+                                            class="mb-2 rounded-circle border border-success border-2" height="60"
+                                            width="60">
+                                        <p class="me-auto p-2">
+                                            <span class="fs-4 fw-light">taylorjohn95</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-norepeat text-start">
+                                    <div class="d-flex ps-3">
+                                        <img src="../img/rosto10.jpg" alt="logo"
+                                            class="mb-2 rounded-circle border border-success border-2" height="60"
+                                            width="60">
+                                        <p class="me-auto p-2">
+                                            <span class="fs-4 fw-light">carla_tay125</span>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-group-item bg-norepeat text-start">
+                                    <div class="d-flex ps-3">
+                                        <img src="../img/rosto5.jpg" alt="logo"
+                                            class="mb-2 rounded-circle border border-success border-2" height="60"
+                                            width="60">
+                                        <p class="me-auto p-2">
+                                            <span class="fs-4 fw-light">marieipsum</span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mx-5">
+                            <div class="accordion accordion-flush -5" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header ">
+                                        <button class="accordion-button collapsed bg-body-secondary " type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Meus Posts
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="my-3">
+                                            <div class="w-50 mb-3 mx-auto">
+                                                <img src="../img/foto3.jpg" alt="logo" class="rounded-3 w-100">
+                                                <span><i class="bi bi-heart text-danger">25</i></span>
+                                            </div>
+                                            <div class="w-50 mb-5 mx-auto">
+                                                <img src="../img/foto2.jpg" alt="logo" class="rounded-3 w-100">
+                                                <span><i class="bi bi-heart text-danger">17</i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center pt-2 bg-body-secondary fw-light p-3 mt-5">
+        <span class="border-bottom border-dark-subtle border-2">Rodrigo Larangeira e Dalton Augusto</span>
+        <span> <a class="n-link" href="https://github.com/rodslsilva/Projeto_RedeSocial"><i
+                    class="bi bi-github"></i></a>
+        </span>
+        <p class="mt-2"> <i class="bi bi-c-circle"> 2024</i>
+        </p>
+        <div>
+            <p class="gap-3 mt-3">
+                <a class="n-link" href="../pg/feed.html">Home</a>
+                <a class="n-link" href="../pg/quemSomos.html">Sobre nós</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
